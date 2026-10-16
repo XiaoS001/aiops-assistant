@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# venv（大，不入库）
+venv/
+
+# 临时文件（注意：不能忽略 __init__.py）
+_*.log
+_*_dbg*.py
+_*_test*.py
+_tmp*
+!_*init*.py
+
+
+# 数据副本（大文件，可重新生成；保留 xm01_copy.db 供验收，改为不忽略）
+# 注：xm01_copy.db 是验收关键（哈希对比用），保留入库
+
+# 渲染截图（可再生成）
+data/render-*.png
+
+# 敏感信息
+# 无 key 明文（key 走环境变量 DEEPSEEK_API_KEY）
